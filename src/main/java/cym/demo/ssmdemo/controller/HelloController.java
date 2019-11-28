@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
  * Created by Administrator on 2019/11/22.
  */
 @Controller
-@RequestMapping("/ssm")
+//@RequestMapping("/ssm")
 public class HelloController {
 
     @Autowired
