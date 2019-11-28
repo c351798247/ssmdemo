@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
  * Created by Administrator on 2019/11/22.
  */
 @Controller
+@RequestMapping("/ssm")
 public class HelloController {
 
     @Autowired
@@ -62,5 +63,12 @@ public class HelloController {
 
         System.out.println(tbUser);
         return tbUser;
+    }
+
+
+    @RequestMapping(value = "/out/{id}")
+    @ResponseBody
+    public Object out(@PathVariable("id") Integer cc) {
+        return cc;
     }
 }
