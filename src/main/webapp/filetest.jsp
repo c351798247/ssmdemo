@@ -11,6 +11,11 @@
     <title>文件上传下载</title>
 </head>
 <body>
-
+<div>
+    <form action="/file/upload" method="post" enctype="multipart/form-data">
+        请选择上传的文件:<input type="file" name="file"/><br>
+        <input type="submit" value="提交">
+    </form>
+</div>
 </body>
 </html>
