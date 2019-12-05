@@ -15,7 +15,7 @@
 </head>
 <body>
 <h2>welcome Second</h2>
-<form action="/user" method="post">
+<form action="<%=application.getContextPath()%>/user" method="post">
   <input name="userId" type="text"/>
   <input name="uname" type="text"/>
   <input name="upass" type="password"/>
@@ -34,7 +34,7 @@
       $.ajax({
         type: 'post',
         dataType: 'json',
-        url: '/user2',
+        url: '<%=application.getContextPath()%>/user2',
         contentType: 'application/json',
         data: JSON.stringify(dd),
         success: function (data) {

@@ -15,7 +15,7 @@
 </head>
 <body>
 <div>
-    <form action="/file/upload" method="post" enctype="multipart/form-data">
+    <form action="<%=application.getContextPath()%>/file/upload" method="post" enctype="multipart/form-data">
         请选择上传的文件:<input type="file" id="file" name="file"/><br>
     </form>
     <button id="btn" onsubmit="return false">上传</button>

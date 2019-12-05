@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>Hello World!</h2>
-<form method="get" action="/hello">
+<form method="get" action="<%=application.getContextPath()%>/hello">
     <input type="text" name="dd"/>
     <input type="submit" value="ClickMe"/>
 </form>
