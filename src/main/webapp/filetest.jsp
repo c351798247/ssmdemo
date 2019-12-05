@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>文件上传下载</title>
-    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="<%=application.getContextPath()%>/js/jquery-3.4.1.js"></script>
 
 </head>
 <body>
@@ -23,7 +23,7 @@
 <div>
     <ul>
         <c:forEach items="${files}" var="f">
-            <li><a href="/file/download/${f.toString().substring(81)}">${f}</a></li>
+            <li><a href="<%=application.getContextPath()%>/file/download/${f.toString().substring(81)}">${f}</a></li>
         </c:forEach>
     </ul>
 </div>
@@ -34,7 +34,7 @@
         $.ajax({
             data:form,
             type: 'post',
-            url: '/file/upload',
+            url: '<%=application.getContextPath()%>/file/upload',
             processData:false,  //tell jQuery not to process the data
             contentType: false,
 //            contentType: 'multipart/form-data',

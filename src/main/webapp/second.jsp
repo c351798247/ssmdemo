@@ -11,7 +11,7 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title></title>
-  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="<%=application.getContextPath()%>/js/jquery-3.4.1.js"></script>
 </head>
 <body>
 <h2>welcome Second</h2>
