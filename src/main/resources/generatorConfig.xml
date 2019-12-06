@@ -11,7 +11,7 @@
 
     <context id="context" targetRuntime="MyBatis3">
         <!-- 相关插件 -->
-        <!--<plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>-->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
         <!--<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"/>-->
         <!--<plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>-->
         <!-- pom.xml依赖 -->
